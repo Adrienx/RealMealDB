@@ -14,12 +14,12 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .header h1 {
   color: #df7d7d;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 nav ul {
@@ -70,6 +70,11 @@ nav ul li a:hover {
   margin: 0 auto 20px;
 }
 
+.featured-items {
+  color: #df7d7d;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
 .routes-container {
   display: flex;
   justify-content: center;

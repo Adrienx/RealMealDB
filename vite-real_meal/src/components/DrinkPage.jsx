@@ -30,7 +30,7 @@ const DrinkPage = () => {
     <div className="drink-page">
       <div className="search-container">
         <label htmlFor="search-bar" className="search-label">
-          Search
+          Search:
         </label>
         <input
           id="search-bar"
@@ -38,9 +38,10 @@ const DrinkPage = () => {
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)} // update searchTerm when user types in the search bar
-          placeholder="Enter drink name from the selection below..."
+          placeholder="Enter drink name..."
         />
       </div>
+      <div className="featured-items">Featured Drinks</div>
       <div className="drink-grid">
         {drinks &&
           drinks.map((drink) => (

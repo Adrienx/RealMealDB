@@ -29,7 +29,7 @@ const MealPage = () => {
     <div className="meal-page">
       <div className="search-container">
         <label htmlFor="search-bar" className="search-label">
-          Search
+          Search:
         </label>
         <input
           id="search-bar"
@@ -37,9 +37,10 @@ const MealPage = () => {
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)} // update searchTerm when user types in the search bar
-          placeholder="Enter meal name from the selection below..."
+          placeholder="Enter meal name..."
         />
       </div>
+      <div className="featured-items">Featured Meals</div>
       <div className="meal-grid">
         {meals &&
           meals.map((meal) => (
