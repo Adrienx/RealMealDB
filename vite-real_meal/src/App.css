@@ -215,7 +215,7 @@ input::placeholder {
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: ;
+    align-items: center;
     margin: 5px;
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(229, 157, 157, 0.5),
