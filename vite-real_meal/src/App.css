@@ -4,7 +4,6 @@
   align-self: stretch; /* Makes the div occupy its parent's width. */
   justify-self: stretch; /* Makes the div occupy its parent's height. */
   margin: 0 auto;
-  padding: 20px;
 }
 
 /* Header and Nav styling */
@@ -15,11 +14,18 @@
   justify-content: space-between;
   padding: 20px;
   font-size: 2rem;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  line-height: 2.8;
 }
 
 .header h1 {
   color: #df7d7d;
   font-size: 3rem;
+  /* background-color: #b42a2a24; */
 }
 
 nav ul {
@@ -46,12 +52,13 @@ nav ul li a:hover {
 /* MealPage and MealDetails styling */
 
 .search-bar {
-  padding: 10px 20px;
+  padding: 10px 10px;
   border-radius: 50px;
   border: 1px solid #ccc;
   font-size: 1.2rem;
   margin-top: 30px;
   width: 60%;
+  font-size: 1rem;
 }
 
 .search-label {
@@ -60,6 +67,7 @@ nav ul li a:hover {
   margin-top: 30px;
   font-size: 2rem;
   color: #df7d7d;
+  margin-bottom: 10px;
 }
 
 .search-container {
@@ -108,7 +116,7 @@ nav ul li a:hover {
     0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   transition: 0.3s;
   border-radius: 15px;
-  /* overflow: hidden; */
+  overflow: hidden;
   color: #df7d7d;
   font-size: 1rem;
   text-decoration: none;
@@ -152,4 +160,72 @@ button {
 button:hover {
   background-color: #ff7f7f;
   color: white;
+}
+input {
+  display: block;
+  width: 50vw;
+  padding: 0 1.25rem;
+}
+
+input,
+input::placeholder {
+  font: 0.1rem;
+}
+
+/* Minimum width */
+@media (max-width: 550px) {
+  .header h1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 2rem;
+    overflow: hidden;
+  }
+
+  nav {
+    display: flex;
+    line-height: 1.3;
+  }
+
+  nav ul li a {
+    color: #df7d7d;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 1rem;
+  }
+
+  nav ul li {
+    display: inline-flex;
+    margin-right: 10px;
+    padding-top: 78px;
+  }
+
+  .featured-items {
+    color: #df7d7d;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .meal-card,
+  .meal-card-detail,
+  .drink-card,
+  .drink-card-detail {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: ;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(229, 157, 157, 0.5),
+      0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: 0.3s;
+    border-radius: 15px;
+    overflow: hidden;
+    color: #df7d7d;
+    font-size: 1rem;
+    text-decoration: none;
+    width: 90%;
+  }
 }

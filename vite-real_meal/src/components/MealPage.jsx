@@ -37,7 +37,7 @@ const MealPage = () => {
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)} // update searchTerm when user types in the search bar
-          placeholder="Enter meal name..."
+          placeholder="Search meals..."
         />
       </div>
       <div className="featured-items">Featured Meals</div>
