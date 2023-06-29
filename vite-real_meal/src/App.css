@@ -1,0 +1,150 @@
+.app {
+  font-family: "Pacifico", cursive;
+  width: 100%;
+  align-self: stretch; /* Makes the div occupy its parent's width. */
+  justify-self: stretch; /* Makes the div occupy its parent's height. */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header and Nav styling */
+
+.header {
+  background-color: #b42a2a24;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.header h1 {
+  color: #df7d7d;
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #df7d7d;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+  color: #ff7f7f;
+}
+
+/* MealPage and MealDetails styling */
+
+.search-bar {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  width: 60%;
+}
+
+.search-label {
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: 30px;
+  font-size: 2rem;
+  color: #df7d7d;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto 20px;
+}
+
+.routes-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.meal-page,
+.drink-page {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.meal-grid,
+.drink-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 5px;
+}
+
+.meal-card,
+.meal-card-detail,
+.drink-card,
+.drink-card-detail {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(229, 157, 157, 0.5),
+    0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: 0.3s;
+  border-radius: 15px;
+  /* overflow: hidden; */
+  color: #df7d7d;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.meal-card img,
+.meal-card-detail img,
+.drink-card img,
+.drink-card-detail img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-content {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.meal-detail,
+.drink-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+
+.back-button {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #df7d7d;
+  padding: 5px;
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #ff7f7f;
+  color: white;
+}
