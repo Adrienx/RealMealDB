@@ -3,24 +3,19 @@ import MealPage from "./MealPage"
 import DrinkPage from "./DrinkPage"
 import DrinkDetails from "./DrinkDetails"
 import MealDetails from "./MealDetails"
-import PropTypes from "prop-types"
 
-const Main = ({ meals }) => {
+const Main = () => {
   return (
     <div className="routes-container">
       <Routes>
         <Route path="/" element={<DrinkPage />} />
-        <Route path="/meals" element={<MealPage meals={meals} />} />
+        <Route path="/meals" element={<MealPage />} />
         <Route path="/meals/:id" element={<MealDetails />} />
-        <Route path="/drinks" element={<DrinkPage meals={meals} />} />
+        <Route path="/drinks" element={<DrinkPage />} />
         <Route path="/drinks/:id" element={<DrinkDetails />} />
       </Routes>
     </div>
   )
-}
-
-Main.propTypes = {
-  meals: PropTypes.array.isRequired,
 }
 
 export default Main
